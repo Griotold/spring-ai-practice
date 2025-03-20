@@ -2,8 +2,11 @@ package com.griotold.spring_ai_practice.kids;
 
 import com.griotold.spring_ai_practice.kids.output.Answer;
 import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class KidsController {
@@ -39,5 +42,16 @@ public class KidsController {
                 .user("하늘은 왜 파란가요?")
                 .call()
                 .entity(Answer.class);
+    }
+
+    /**
+     * List<>로 응답받기
+     * */
+    @GetMapping("/kids-list")
+    public List<Answer> kidsList() {
+        return chatClient.prompt()
+                .user("하늘은 왜 파란가요?, 비는 어떻게 내리는 거에요?, 천둥과 번개는 어떻게 치는 거에요?")
+                .call()
+                .entity(new ParameterizedTypeReference<>() {});
     }
 }

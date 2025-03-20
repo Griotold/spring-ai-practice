@@ -5,3 +5,7 @@ Content-Type: application/json
 ### 자바 객체로 응답받기
 GET localhost:8080/kids-java-object
 Content-Type: application/json
+
+### 리스트로 응답받기
+GET localhost:8080/kids-list
+Content-Type: application/json
