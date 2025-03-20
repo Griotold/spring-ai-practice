@@ -1,4 +1,4 @@
-package com.griotold.spring_ai_practice;
+package com.griotold.spring_ai_practice.package250319;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.context.annotation.Bean;

@@ -1,0 +1,7 @@
+### 일반 문자열로 응답받기
+GET localhost:8080/kids-string
+Content-Type: application/json
+
+### 자바 객체로 응답받기
+GET localhost:8080/kids-java-object
+Content-Type: application/json

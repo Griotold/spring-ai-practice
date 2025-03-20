@@ -1,0 +1,7 @@
+### stream - 그냥 문자열로
+GET localhost:8080/stream-string
+Content-Type: application/json
+
+### stream - real
+GET localhost:8080/stream-real
+Accept: text/event-stream

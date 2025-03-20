@@ -4,4 +4,4 @@ spring:
       api-key: ${API_KEY}
       chat:
         options:
-          model: gpt-4
+          model: gpt-4o

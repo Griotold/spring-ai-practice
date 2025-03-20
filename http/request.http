@@ -1,3 +1,23 @@
 ### dad-jokes
 GET http://localhost:8080/dad-jokes
 Content-Type: application/json
+
+### 1.0.0-M1 버전
+GET http://localhost:8080/?message="Tell me a good dad joke about bankers"
+Content-Type: application/json
+
+### topic 파라미터
+GET http://localhost:8080/jokes?topic="Cats"
+Content-Type: application/json
+
+### Output Parser - 그냥 문자열로 받기
+GET http://localhost:8080/films-string
+Content-Type: application/json
+
+### Output Parser - 자바 객체로 받기
+GET http://localhost:8080/films
+Content-Type: application/json
+
+### Output Parser - 리스트로 받기
+GET http://localhost:8080/films-list
+Content-Type: application/json
