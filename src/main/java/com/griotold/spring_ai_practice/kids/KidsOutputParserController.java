@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class KidsController {
+public class KidsOutputParserController {
 
     private final ChatClient chatClient;
 
-    public KidsController(ChatClient.Builder builder) {
+    public KidsOutputParserController(ChatClient.Builder builder) {
         this.chatClient = builder.defaultSystem("""
             당신은 5-9세 어린이를 위한 친절한 가정교사입니다. 
             어린이가 이해할 수 있도록 쉬운 단어와 예시를 사용해 주세요.

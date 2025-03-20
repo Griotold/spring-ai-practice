@@ -1,0 +1,15 @@
+### 프롬프트 - 장르에 따른 유튜버 TOP 10
+GET localhost:8080/youtube/popular
+Content-Type: application/json
+
+### 프롬프트 - 아재개그: cats
+GET localhost:8080/dad-jokes-prompting
+Content-Type: application/json
+
+### 프롬프트 - 아재개그 - system 부여
+GET localhost:8080/dad-jokes-system
+Content-Type: application/json
+
+### 프롬프트 - 프롬프트 템플릿 - 장르에 따른 유튜버 TOP 10
+GET localhost:8080/youtube/popular-template?genre=health
+Content-Type: application/json
