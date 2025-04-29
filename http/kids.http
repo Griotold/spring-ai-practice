@@ -15,5 +15,5 @@ GET localhost:8080/kids-template?genre=history
 Content-Type: application/json
 
 ### 파일에서 프롬프트 템플릿 불러오기 - 리스트
-GET localhost:8080/kids-template-list?genre=history
+GET localhost:8080/kids-template-list?genre=animal
 Content-Type: application/json
